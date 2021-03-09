@@ -1,0 +1,88 @@
+:root{
+--green:#687864;
+--dark-blue: #31708e;
+--mid-blue: #5085A5;
+--light-blue: #8FC1E3;
+--white:#F7F9Fb;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--white);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px 35px 0 35px;
+    background-image: url('./images/about-me.png');
+    background-size: cover;
+    background-position: 0%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+}
+
+header h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0,5);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    margin: 7px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex: 0 0 45%;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: var(--white);
+    color: var(--mid-blue);
+    border-radius: 30px;
+    text-shadow: none;
+}
+
+.hero {
+  background-image: url('./images/about-me.png');
+  background-size: cover;
+  background-position: 0%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-attachment: fixed;
+  padding: 100px 200px 200px 0px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-style: italic;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
