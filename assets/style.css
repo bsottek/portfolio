@@ -15,12 +15,13 @@
 
 body {
     color: var(--white);
+    background-color: var(--light-blue);
     font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
     padding: 20px 35px 0 35px;
-    background-image: url('./images/about-me.png');
+    background-image: url('./images/hero.png');
     background-size: cover;
     background-position: 0%;
     background-attachment: fixed;
@@ -58,7 +59,7 @@ header nav ul {
 header nav ul li {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.75vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -70,7 +71,7 @@ header nav ul li a:hover {
 }
 
 .hero {
-  background-image: url('./images/about-me.png');
+  background-image: url('./images/hero.png');
   background-size: cover;
   background-position: 0%;
   display: flex;
@@ -85,4 +86,27 @@ header nav ul li a:hover {
     font-size: 55px;
     font-style: italic;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #687864;
+    margin: 20px;
+}
+
+.about-me img{
+    padding: 1vw;
+    max-width: 15%;
+}
+
+.about-me div{
+    flex: 50%;
+    padding: 2vw;
+    display: flex;
+}
+
+.about-me h2{
+    flex: 70%;
 }
