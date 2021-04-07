@@ -94,6 +94,7 @@ header nav ul li a:hover {
     justify-content: space-around;
     background-color: #687864;
     margin: 20px;
+    border-radius: 5px;
 }
 
 .about-me img{
@@ -105,8 +106,61 @@ header nav ul li a:hover {
     flex: 50%;
     padding: 2vw;
     display: flex;
+    align-items: center;
 }
 
 .about-me h2{
     flex: 70%;
+
+}
+
+.my-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #687864;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* .my-work img{
+    padding: 1vw;
+    max-width: 15%;
+} */
+
+.my-work div{
+    flex: 50%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.my-work h2{
+    flex: 70%;
+}
+
+.tile{
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* .tile href{
+    backdrop-filter: blur(8px);
+} */
+
+#run-buddy {
+    background-image: url("../assets/images/run-buddy-hero.jpg");
+}
+
+#robot-gladiators {
+    background-image: url("../assets/images/robot-gladiators.jpeg");
+}
+
+#placeholder-1{
+    background-image: url("../assets/images/placeholder.jpg");
+}
+
+#placeholder-2{
+    background-image: url("../assets/images/placeholder2.png");
 }
