@@ -111,7 +111,13 @@ header nav ul li a:hover {
 
 .about-me h2{
     flex: 70%;
+    font-size: 3vw;
+}
 
+.about-me p{
+    font-size: 1.5vw;
+    word-spacing: .1vw;
+    line-height: 2vw;
 }
 
 .my-work {
@@ -129,25 +135,33 @@ header nav ul li a:hover {
 } */
 
 .my-work div{
-    flex: 50%;
+    flex: 30%;
     padding: 2vw;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .my-work h2{
     flex: 70%;
+    margin: 2vw;
 }
 
 .tile{
     margin: 10px;
     background-position: center;
     background-size: cover;
+    height: 20vw;
 }
 
-/* .tile href{
-    backdrop-filter: blur(8px);
-} */
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.tile a{
+    font-size: 2vw;
+}
 
 #run-buddy {
     background-image: url("../assets/images/run-buddy-hero.jpg");
@@ -163,4 +177,18 @@ header nav ul li a:hover {
 
 #placeholder-2{
     background-image: url("../assets/images/placeholder2.png");
+}
+
+/* media queries for mobile */
+@media only screen and (max-width:600px){
+    .my-work div{
+        flex: 80%
+    }
+}
+
+/* media queries for tablet */
+@media only screen and (max-width:1024px) and (min-width:600px){
+    .my-work div{
+        flex: 40%
+    }
 }
