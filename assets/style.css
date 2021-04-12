@@ -135,11 +135,15 @@ header nav ul li a:hover {
 } */
 
 .my-work div{
-    flex: 30%;
     padding: 2vw;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-tiles{
+    align-items: center;
 }
 
 .my-work h2{
@@ -148,11 +152,16 @@ header nav ul li a:hover {
     font-size: 3vw;
 }
 
+.my-work div:first-child{
+    flex: 80%;
+}
+
 .tile{
     margin: 10px;
     background-position: center;
     background-size: cover;
     height: 20vw;
+    border-radius: 1vw;
 }
 
 a{
