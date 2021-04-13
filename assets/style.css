@@ -25,10 +25,6 @@ body {
 
 header {
     padding: 20px 35px 0 35px;
-    background-image: url('./images/hero.png');
-    background-size: cover;
-    background-position: 0%;
-    background-attachment: fixed;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -75,14 +71,10 @@ header nav ul li a:hover {
 }
 
 .hero {
-  background-image: url('./images/hero.png');
-  background-size: cover;
-  background-position: 0%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  background-attachment: fixed;
   padding: 100px 200px 200px 0px;
 }
 
@@ -208,7 +200,11 @@ a{
 }
 
 /* media queries for mobile */
-@media only screen and (max-width:600px){
+@media only screen and (max-width:500px){
+    
+    body {
+        background-size:initial;
+    }
     
     section{
         margin: 5px;
@@ -221,6 +217,10 @@ a{
 
     a {
         font-size: 16px;
+    }
+
+    .hero {
+        padding: 100px 200px 100px 75px;
     }
 
     .my-work div{
@@ -246,5 +246,9 @@ a{
         font-size: 16px;
         line-height: 18px;
         padding: 16px 10px;
+    }
+
+    address {
+        font-size: 16px;
     }
 }
