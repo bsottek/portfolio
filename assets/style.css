@@ -95,11 +95,13 @@ header nav ul li a:hover {
     background-color: #687864;
     margin: 20px;
     border-radius: 5px;
+    box-sizing: content-box;
 }
 
 .about-me img{
     padding: 1vw;
-    max-width: 15%;
+    width: 20%;
+    margin: 0 0 0 5vw;
 }
 
 .about-me div{
@@ -107,17 +109,23 @@ header nav ul li a:hover {
     padding: 2vw;
     display: flex;
     align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .about-me h2{
-    flex: 70%;
+    flex: 30%;
     font-size: 3vw;
+    text-align: center;
 }
 
 .about-me p{
     font-size: 1.5vw;
     word-spacing: .1vw;
     line-height: 2vw;
+    flex: 1 80%;
+    text-align: left;
 }
 
 .my-work {
@@ -129,10 +137,6 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* .my-work img{
-    padding: 1vw;
-    max-width: 15%;
-} */
 
 .my-work div{
     padding: 2vw;
@@ -148,8 +152,9 @@ header nav ul li a:hover {
 
 .my-work h2{
     flex: 70%;
-    margin: 2vw;
+    margin: 2vw 2vw 2vw 5vw;
     font-size: 3vw;
+
 }
 
 .my-work div:first-child{
@@ -226,17 +231,43 @@ a{
     font-size: 2vw;
 }
 
-
-/* media queries for mobile */
-@media only screen and (max-width:600px){
-    .my-work div{
-        flex: 80%
-    }
-}
-
 /* media queries for tablet */
 @media only screen and (max-width:1024px) and (min-width:600px){
     .my-work div{
         flex: 40%
+    }
+}
+
+/* media queries for mobile */
+@media only screen and (max-width:600px){
+    
+    .my-work div{
+        flex: 80%
+    }
+
+    .about-me{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+        box-sizing: content-box;
+    }
+
+
+    .about-me img{
+        margin: 1vw;
+        flex: 30%;
+    }
+
+    .about-me h2{
+        flex: 80%;
+        font-size: 8vw;
+    }
+
+    .about-me p{
+        flex: 50%;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 16px 0;
     }
 }
