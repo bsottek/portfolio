@@ -248,6 +248,11 @@ a{
         padding: 16px 10px;
     }
 
+    .contact-info{
+        height: 30vw;
+        padding: 5px;
+    }
+
     address {
         font-size: 16px;
     }
