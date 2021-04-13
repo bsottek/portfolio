@@ -15,8 +15,12 @@
 
 body {
     color: var(--white);
-    background-color: var(--light-blue);
     font-family: Helvetica, Arial, sans-serif;
+    background-image: url('./images/hero.png');
+    background-size: cover;
+    background-position: 0%;
+    background-attachment: fixed;
+
 }
 
 header {
@@ -92,7 +96,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #687864;
+    background-color: rgba(104, 120, 100, .9);
     margin: 20px;
     border-radius: 5px;
     box-sizing: content-box;
