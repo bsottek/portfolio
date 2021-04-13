@@ -98,6 +98,10 @@ section {
     box-sizing: content-box;
 }
 
+a {
+    font-size: 2vw;
+}
+
 .section-title{
     text-align: center;
     font-size: 3vw;
@@ -154,10 +158,6 @@ a{
     color: #ffff;
 }
 
-.tile a{
-    font-size: 2vw;
-}
-
 #run-buddy {
     background-image: url("../assets/images/run-buddy-hero.jpg");
 }
@@ -206,9 +206,17 @@ a{
 /* media queries for mobile */
 @media only screen and (max-width:600px){
     
+    section{
+        margin: 5px;
+    }
+
     .section-title{
         flex: 80%;
         font-size: 8vw;
+    }
+
+    a {
+        font-size: 16px;
     }
 
     .my-work div{
@@ -233,6 +241,6 @@ a{
         flex: 50%;
         font-size: 16px;
         line-height: 18px;
-        padding: 16px 0;
+        padding: 16px 10px;
     }
 }
