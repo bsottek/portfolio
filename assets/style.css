@@ -166,8 +166,13 @@ a{
     background-image: url("../assets/images/robot-gladiators.jpeg");
 }
 
-#placeholder-2{
-    background-image: url("../assets/images/placeholder2.png");
+#taskinator{
+    background-image: url("../assets/images/taskinator-screenshot.png");
+}
+
+#password-generator{
+    background-image: url("../assets/images/password-generator-screenshot.png");
+    align-content: flex-end;
 }
 
 .info-container{
