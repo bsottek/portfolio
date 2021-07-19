@@ -158,6 +158,13 @@ a{
     background-image: url("../assets/images/dog-maps.jpg");
 }
 
+#devtrax {
+    background-image: url("../assets/images/devtrax.png");
+}
+#devtrax a {
+    color: var(--dark-blue);
+}
+
 #run-buddy {
     background-image: url("../assets/images/run-buddy-hero.jpg");
 }
